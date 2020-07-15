@@ -14,8 +14,7 @@ class PostsController extends Controller
         }
 
         return view('post', [
-            'post_title' => $post->slug,
-            'post_text' => $post->body
+            'post' => $post
         ]);
     }
 }
